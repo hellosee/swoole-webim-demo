@@ -33,7 +33,11 @@
 
 # 资料说明
 swoole官网 http://www.swoole.com
+
 程序聊天界面采用 钉钉 http://dingtalk.com 
+
+前端使用插件：
+上传图片插件：xlyjs 一个封装好的跨域上传js控件（https://github.com/hellosee/xlyjs）
 
 本程序使用的是文件存储。没有测试抗压能力，并且可能存在BUG，切勿用做商业用途。只提供一起学习和讨论。
 如果您有问题，欢迎联系QQ：1335244575 共同学习

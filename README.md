@@ -17,6 +17,7 @@
 ### [在线聊天室](http://chat.hellosee.cc/)  http://chat.hellosee.cc
 
 # 如何运行？
+
 1.先将client目录放置在您的web服务器下，打开client/static/js/init.js 文件，将该文件的配置修改成自己的域名或者IP
 
 2.打开server目录，首先将rooms目录以及其子目录权限设为777，确保该目录可写。
@@ -24,6 +25,7 @@
 3.修改server/config.inc.php 文件。将下面两行代码修改为您的域名或者IP。
 
 > define("DOMAIN","http://192.168.56.133:8081");
+
 > define('ONLINE_DIR','/mnt/hgfs/swoole/chatroom/rooms/');
 
 4.命令行执行 ：

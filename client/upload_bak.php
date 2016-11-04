@@ -34,7 +34,7 @@
 			//echo $f->errmsg()."<br>\n";
 		}
 		$arr = $f->getInfo();
-		$url = "http://120.24.84.28:81/uploads/".$arr[0]['saveName'];
+		$url = "http://192.168.56.133/uploads/".$arr[0]['saveName'];
 		//上传结果保存在数组returnArray中。saveName
 		$data = array('err'=>"", 'msg'=>array('url'=>$url, 'localname'=>$_FILES['upload']['name']));
 		

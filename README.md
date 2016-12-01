@@ -22,9 +22,11 @@
 
 2.打开server目录，首先将rooms目录以及其子目录权限设为777，确保该目录可写。将client/uploads目录设置为777可写。
 
-3.修改server/config.inc.php 文件。将下面两行代码修改为您的域名或者IP。
+3.修改server/config.inc.php 文件。将下面一行代码修改为您的域名或者IP。
 
 > define("DOMAIN","http://192.168.56.133:8081");
+
+并且将下面这样修改为rooms目录所在的路径
 
 > define('ONLINE_DIR','/mnt/hgfs/swoole/chatroom/rooms/');
 

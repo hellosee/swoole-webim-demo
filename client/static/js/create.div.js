@@ -47,7 +47,7 @@ var cdiv = {
 				break;
 			case 'rooms':
 				arr = [
-					'<li class="menu-item ',params.selected,'" roomid="',params.roomid,'" onclick="chat.changeRoom(this)">',params.roomname,'</li>'
+					'<li class="menu-item ',params.selected,'" roomid="',params.roomid,'" onclick="chat.changeRoom(this)">',params.roomname,'<span id="message-',params.roomid,'">0</span></li>'
 				];
 				break;
 		}

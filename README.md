@@ -13,6 +13,7 @@
 > * 支持@人
 > * 支持分房间聊天功能
 > * 显示消息数
+
 在线聊天DEMO：
 ### [在线聊天室](http://chat.hellosee.cc/)  http://chat.hellosee.cc
 

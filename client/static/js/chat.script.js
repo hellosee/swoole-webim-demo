@@ -139,6 +139,8 @@ var chat = {
 						}
 						chat.chatAudio();
 						chat.addChatLine('chatLine',d.data,d.data.roomid);
+						//增加消息
+						chat.showMsgCount(d.data.roomid,'show');
 					}
 					break;
 				case 3:
@@ -181,6 +183,19 @@ var chat = {
 	wsOnerror : function(){
 		this.data.wSock.onerror = function(event){
 			//alert('服务器关闭，请联系QQ:1335244575 开放测试2');
+		}
+	},
+	showMsgCount:function(roomid,type){
+		if(!this.data.login) {return;}
+		if(type == 'hide'){
+			$("#message-"+roomid).text(parseInt(0));
+			$("#message-"+roomid).css('display','none');
+		} else {
+			if(chat.data.crd != roomid){
+				$("#message-"+roomid).css('display','block');
+				var msgtotal = $("#message-"+roomid).text();
+				$("#message-"+roomid).text(parseInt(msgtotal)+1);
+			}
 		}
 	},
 	/** 
@@ -304,7 +319,9 @@ var chat = {
 		});
 	},
 	changeUser : function( data ){
+		console.log(data);
 		$("#conv-lists-"+data.oldroomid).find('#user-' + data.fd).fadeOut(function(){
+			chat.showMsgCount(data.roomid,'hide');
 			$(this).remove();
 			//chat.addChatLine('logout',data,data.oldroomid);
 		});

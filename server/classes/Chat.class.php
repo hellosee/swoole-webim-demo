@@ -41,6 +41,13 @@ class Chat {
 		return $users;
 	}
 	
+	public static function _p($obj=array(),$exit = 0){
+		echo "<pre>";
+		print_r($obj);
+		echo "</pre>";
+		$exit && exit;
+	}
+	
 	public static function logout($roomid,$fd){
 		$user = new ChatUser();
 		$userInfo = $user->getUser($roomid,$fd);

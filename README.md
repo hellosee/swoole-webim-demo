@@ -15,7 +15,7 @@
 > * 显示消息数
 
 在线聊天DEMO：
-### [在线聊天室](http://chat.hellosee.cc/)  http://chat.hellosee.cc
+### [在线聊天室](http://im.ido.icu/)  http://im.ido.icu
 
 # 如何运行？
 

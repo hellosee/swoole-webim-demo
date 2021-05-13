@@ -1,7 +1,7 @@
 # 在线聊天室(Making a Web Chat With PHP and Swoole)
 
 ------
-@author: 翎羽鹭 (http://www.hellosee.cc)
+@author: 翎羽鹭 (https://www.ido.icu)
 
 @email: 1335244575@qq.com
 

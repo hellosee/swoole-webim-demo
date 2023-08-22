@@ -1,9 +1,9 @@
 # 在线聊天室(Making a Web Chat With PHP and Swoole)
 
 ------
-@author: 翎羽鹭 (https://www.ido.icu)
+@author: 翎羽鹭
 
-@email: 1335244575@qq.com
+@email: lsj_best@qq.com
 
 使用swoole扩展和php开发的一个在线聊天室，**目前实现的功能有** ：
 
